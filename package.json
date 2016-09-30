@@ -1,0 +1,19 @@
+{
+  "name": "elm-tutorial",
+  "version": "1.0.0",
+  "description": "Elm Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samjonester/elm-tutorial.git"
+  },
+  "author": "samjonester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samjonester/elm-tutorial/issues"
+  },
+  "homepage": "https://github.com/samjonester/elm-tutorial#readme"
+}
