@@ -1,4 +1,4 @@
-module Players.Commands exposing (..)
+module Players.Commands exposing (fetchAll)
 
 import Http
 import Task
