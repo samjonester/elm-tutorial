@@ -1,9 +1,10 @@
 module Players.Edit exposing (view)
 
-import Html exposing (Html, div, h1, text, span, a, i)
+import Html exposing (Html, div, h1, text, span, a, i, button)
 import Html.Attributes exposing (class)
+import Html.Events exposing (onClick)
 
-import Players.Messages exposing (Msg)
+import Players.Messages exposing (Msg(..))
 import Players.Models exposing (Player)
 
 view : Player -> Html Msg
@@ -16,7 +17,7 @@ view player =
 nav : Html Msg
 nav =
     div [ class "clearfix mb2 white bg-black p1" ]
-        []
+        [ listBtn ]
 
 form : Player -> Html Msg
 form player =
@@ -45,3 +46,12 @@ btnLevelIncrease : Player -> Html Msg
 btnLevelIncrease player =
     a [ class "btn ml1 h1" ]
         [ i [ class "fa fa-plus-circle" ] [] ]
+
+listBtn : Html Msg
+listBtn =
+    button [ class "btn regular"
+           , onClick ShowPlayers
+           ]
+        [ i [ class "fa fa-chevron-left mr1" ] []
+        , text "List"
+        ]
