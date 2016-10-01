@@ -1,4 +1,4 @@
-module Routing exposing (..)
+module Routing exposing (Route(..))
 
 import String
 import UrlParser exposing (..)
